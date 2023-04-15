@@ -11,8 +11,14 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body>{children}</body>
+    <html lang="en" data-theme='synthwave'>
+      <body className='bg-neutral'>
+        <div className='flex flex-col items-center'>
+          <div className='max-w-screen-md min-h-[100vh] w-full flex flex-col'>
+            {children}
+          </div>
+        </div>
+      </body>
     </html>
   )
 }
