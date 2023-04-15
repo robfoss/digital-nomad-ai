@@ -1,4 +1,6 @@
+import { Selector } from './components/selector'
 import './globals.css'
+
 
 export const metadata = {
   title: 'Create Next App',
@@ -15,6 +17,7 @@ export default function RootLayout({
       <body className='bg-neutral'>
         <div className='flex flex-col items-center'>
           <div className='max-w-screen-md min-h-[100vh] w-full flex flex-col'>
+            <Selector/>
             {children}
           </div>
         </div>
